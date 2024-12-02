@@ -16,7 +16,7 @@ html{
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f1f1f100;
 }
 ::-webkit-scrollbar-thumb {
     background: #888;
@@ -29,6 +29,7 @@ html{
 /* all similar content styling codes */
 section{
     padding: 100px 0;
+    background: url("/images/background.jpg");
 }
 .max-width{
     max-width: 1300px;
@@ -63,7 +64,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: rgb(255, 255, 255);
     transform: translateX(-50%);
 }
 section .title::after{
@@ -88,7 +89,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background:  rgb(20, 73, 220);
+    background:  #0a215c;
 }
 .navbar .max-width{
     display: flex;
@@ -165,7 +166,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("images/background.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -189,7 +190,7 @@ section .title::after{
     margin-left: -3px;
 }
 .home .home-content .text-2 span{
-    color: #ffe600;
+    color: #ffe459;
 }
 .home .home-content .text-3{
     font-size: 40px;
@@ -222,6 +223,7 @@ section .title::after{
 }
 .about .about-content .left{
     width: 45%;
+
 }
 .about .about-content .left img{
     height: 400px;
@@ -246,7 +248,7 @@ section .title::after{
 .about .about-content .right a{
     display: inline-block;
     background: rgb(20, 73, 220);
-    color: #fff;
+    color: rgba(255, 255, 255, 0);
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
@@ -263,7 +265,9 @@ section .title::after{
 /* services section styling */
 .services, .teams{
     color:#fff;
-    background: rgb(20, 73, 220);
+    background: url("images/background.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
     margin-top: 50px;
 }
 .services .title::before,
@@ -273,12 +277,14 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: rgb(20, 73, 220);
-    color: #ffe600;
+    color: #ffe459;
     content: "";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: rgb(20, 73, 220);
+    background: url("images/background.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -286,33 +292,42 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: #ffe600;
+    background: #ffffff;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
-    color: rgb(20, 73, 220);
+    color: #0a215c;
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color:  #ffe600;
+    color:  #ffe459;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
-    color: rgb(20, 73, 220);
+    color: #0a215c;
 }
 .services .serv-content .card:hover .text{
-    color: rgb(20, 73, 220);
+    color: #0a215c;
 }
 .services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    color: #ffe459
 }
 
 /* skills section styling */
+
+.skills{
+    padding-bottom:0px;
+    background: url("images/background.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#fff;
+}
 
 .skills .title::after{
     content: "";
@@ -455,6 +470,14 @@ section .title::after{
 }
 
 /* contact section styling */
+.contact{
+    padding-bottom:0px;
+    background: url("images/background.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#fff;
+}
+
 .contact .title::after{
     content: "";
 }
@@ -488,7 +511,7 @@ section .title::after{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: rgb(255, 255, 255);
 }
 .contact .right form .fields{
     display: flex;
@@ -551,7 +574,11 @@ section .title::after{
 }
 /* footer section styling */
 footer{
-    background: #111;
+    padding-bottom:0px;
+    background: url("images/background.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#fff;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
@@ -623,6 +650,7 @@ footer span a:hover{
     }
     .about .about-content .column{
         width: 100%;
+       
     }
     .about .about-content .left{
         display: flex;
@@ -691,6 +719,19 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+body{
+    padding-bottom:0px;
+    background: url("images/background.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#fff;
+}
+
 .about{
     padding-bottom:0px;
+    background: url("images/background.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#fff;
 }
