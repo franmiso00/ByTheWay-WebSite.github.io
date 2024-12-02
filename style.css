@@ -173,32 +173,34 @@ section .title::after{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
+
 .home .max-width{
   width: 100%;
   display: flex;
 }
-.home .max-width .row{
-  margin-right: 0;
+
+.home .home-content {
+    display: flex; /* Asegura que las columnas estén en línea */
+    justify-content: space-between; /* Añade espacio entre las columnas */
+    align-items: center; /* Centra las columnas verticalmente */
+    flex-wrap: wrap; /* Permite que las columnas se ajusten si el espacio es limitado */
 }
-.home .home-content .text-1{
-    font-size: 27px;
+
+.home .home-content .left, 
+.home .home-content .right {
+    width: 48%; /* Ajusta el ancho para que ambas columnas ocupen espacio lado a lado */
+    text-align: center;
+} 
+
+.home .home-content .left .text{
+    font-size: 60px;
 }
-.home .home-content .text-2{
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-.home .home-content .text-2 span{
+
+.home .home-content .left .text span{
     color: #ffe600;
 }
-.home .home-content .text-3{
-    font-size: 40px;
-    margin: 5px 0;
-}
-.home .home-content .text-3 span{
-    color: rgb(20, 73, 220);
-    font-weight: 500;
-}
+
+
 .home .home-content a{
     display: inline-block;
     background: rgb(20, 73, 220);
@@ -214,6 +216,13 @@ section .title::after{
 .home .home-content a:hover{
     color: rgb(20, 73, 220);
     background: none;
+}
+
+.home .home-content .right img{
+    height: 400px;
+    width:  400px;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
 /* about section styling */
@@ -241,6 +250,9 @@ section .title::after{
     color: rgb(20, 73, 220);
 }
 .about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right{
     text-align: justify;
 }
 .about .about-content .right a{
