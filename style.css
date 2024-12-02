@@ -342,6 +342,12 @@ section .title::after{
     color:#fff;
 }
 
+.skills .skills-content i{
+    color: #ffffff; /* Blanco */
+    margin-right: 8px; /* Separación del texto */
+    font-size: 1.5rem; /* Tamaño ajustado */
+}
+
 .skills .title::after{
     content: "";
 }
@@ -351,11 +357,15 @@ section .title::after{
 .skills .skills-content .right .text{
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .skills .skills-content .right .row{
     margin-top: 50px;
+}
+
+.skills .skills-content .right .row i{
+    color: #fff;
 }
 .skills .skills-content .right p{
     text-align: justify;
