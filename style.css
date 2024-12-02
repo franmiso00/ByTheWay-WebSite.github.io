@@ -307,6 +307,7 @@ section .title::after{
     color: rgb(20, 73, 220);
 }
 .services .serv-content .card .text{
+    color:  #ffe600;
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -552,10 +553,21 @@ section .title::after{
 /* footer section styling */
 footer{
     background: #111;
-    padding: 15px 23px;
+    padding: 20px;
     color: #fff;
     text-align: center;
+    
 }
+ .social-links a {
+    margin: 0 10px;
+    color: rgb(20, 73, 220);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
 footer span a{
     color: rgb(20, 73, 220);
     text-decoration: none;
