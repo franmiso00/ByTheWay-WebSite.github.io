@@ -353,6 +353,8 @@ section .title::after{
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
+    justify-content: space-around;
+    align-items: center;
 }
 .skills .skills-content .right .text{
     font-size: 20px;
@@ -360,13 +362,25 @@ section .title::after{
     margin-bottom: 50px;
 }
 
-.skills .skills-content .right .row{
+.skills .skills-content .right .row-1{
     margin-top: 50px;
+    align-items: center;
+    display: flex;
+    height: 65px;
+    gap:25px;
+}
+.skills .skills-content .right .row-2{
+    margin-top: 50px;
+    align-items: center;    
 }
 
-.skills .skills-content .right .row i{
-    color: #fff;
+.skills .skills-content .number-icon {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 8px;
 }
+
 .skills .skills-content .right p{
     text-align: justify;
 }
@@ -429,73 +443,6 @@ section .title::after{
     width: 70%;
 }
 
-
-/* teams section styling */
-.teams .title::after{
-    content: "";
-}
-.teams .carousel .card{
-    background: #fff;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover{
-    background: rgb(20, 73, 220);
-}
-.teams .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.teams .carousel .card .text{
-    color: rgb(20, 73, 220);
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.teams .carousel .card:hover .text{
-    color: #fff;
-}
-.teams .carousel .card img{
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid rgb(20, 73, 220);
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover img{
-    border-color: #fff;
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid rgb(20, 73, 220)!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: rgb(20, 73, 220)!important;
-}
 
 /* contact section styling */
 .contact{
