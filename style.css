@@ -392,12 +392,13 @@ section .title::after{
     width: 70%;
 }
 
+
 /* teams section styling */
 .teams .title::after{
     content: "";
 }
 .teams .carousel .card{
-    background: #222;
+    background: #fff;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -418,13 +419,17 @@ section .title::after{
     transform: scale(1.05);
 }
 .teams .carousel .card .text{
+    color: rgb(20, 73, 220);
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+.teams .carousel .card:hover .text{
+    color: #fff;
+}
 .teams .carousel .card img{
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid rgb(20, 73, 220);
