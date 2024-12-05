@@ -357,6 +357,15 @@ section .title::after{
     justify-content: space-around;
     align-items: center;
 }
+
+.skills .skills-content .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+    text-align: center; 
+}
+
 .skills .skills-content .right .text{
     font-size: 20px;
     font-weight: 600;
@@ -372,7 +381,11 @@ section .title::after{
 }
 .skills .skills-content .right .row-2{
     margin-top: 50px;
-    align-items: center;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+    text-align: center; 
 }
 
 .skills .skills-content .number-icon {
