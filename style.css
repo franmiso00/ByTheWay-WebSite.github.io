@@ -524,6 +524,13 @@ section .title::after{
     color: rgb(255, 255, 255);
     width: 80%; /* Reduce el ancho para que sea más legible */
   }
+
+  .section-bottom .description span{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color:  #ffe459;
+    
+  }
   
   .email-form {
     display: flex;
@@ -835,6 +842,7 @@ footer span a:hover{
     }
 
     .home .home-content {
+        margin-top: 60px;
         flex-direction: column; /* Cambia las columnas a una disposición vertical */
         align-items: center; /* Centra el contenido */
     }
@@ -898,7 +906,7 @@ footer span a:hover{
     }
 
     .email-form textarea {
-        height: 80px; /* Reduce la altura del textarea */
+        height: 150px; /* Reduce la altura del textarea */
         font-size: 0.9rem; /* Reduce el tamaño del texto */
     }
 
@@ -916,16 +924,18 @@ footer span a:hover{
 @media (max-width: 500px) {
     .home .home-content .left .text{
         font-size: 40px;
+        margin-bottom: 15px;
     }
 
     .home .home-content a {
         font-size: 18px; /* Reduce el tamaño del botón para pantallas más pequeñas */
         padding: 8px 24px; /* Ajusta el relleno del botón */
+        margin-bottom: 15px;
     }
 
     .home .home-content .right img {
-        height: 200px; /* Ajusta la altura de la imagen */
-        width: 200px; /* Ajusta el ancho de la imagen */
+        height: 260px; /* Ajusta la altura de la imagen */
+        width: 260px; /* Ajusta el ancho de la imagen */
     }
    
     .about .about-content .right .text,
@@ -934,19 +944,19 @@ footer span a:hover{
     }
 
     .section-top h1 {
-        font-size: 3.5rem; /* Ajusta aún más el tamaño del texto en pantallas muy pequeñas */
+        font-size:  4rem; /* Ajusta aún más el tamaño del texto en pantallas muy pequeñas */
     }
 
     .section-bottom h2 {
-        font-size: 1.5rem; /* Ajusta el tamaño de la fuente del título */
+        font-size: 2rem; /* Ajusta el tamaño de la fuente del título */
     }
 
     .section-bottom .description {
-        font-size: 0.9rem; /* Reduce aún más el tamaño del texto */
+        font-size: 1rem; /* Reduce aún más el tamaño del texto */
     }
 
     .email-form textarea {
-        height: 70px; /* Reduce aún más la altura del textarea */
+        height: 150px; /* Reduce aún más la altura del textarea */
     }
 
     .textarea-container button {
