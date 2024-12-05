@@ -385,22 +385,25 @@ section .title::after{
 .skills .skills-content .right p{
     text-align: justify;
 }
+
 .skills .skills-content .right a{
     display: inline-block;
-    background: rgb(20, 73, 220);
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
+    background: #ffe459;
+    color: #0a215c;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 12px 36px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(20, 73, 220);
+    border: 2px solid #ffe459;
     transition: all 0.3s ease;
 }
 .skills .skills-content .right a:hover{
-    color: rgb(20, 73, 220);
-    background: none;
+    color: #0a215c;
+    background: #ffffff;
+    border: 2px solid #0a215c;
 }
+
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
@@ -592,6 +595,7 @@ section .title::after{
     background-size: cover;
     background-attachment: fixed;
     color:#fff;
+    margin-bottom: 50px;
 }
 
 .contact .title::after{
@@ -621,7 +625,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: rgb(20, 73, 220);
+    color: #ffe459;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -670,24 +674,28 @@ section .title::after{
   align-items: center;
 }
 .right form .button-area button{
-  color: #fff;
+  color: #0a215c;
   display: block;
   width: 160px!important;
   height: 45px;
   outline: none;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: bold;
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: rgb(20, 73, 220);
-  border: 2px solid rgb(20, 73, 220);
+  background: #ffe459;
+  border: 2px solid  #ffe459;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  color: rgb(20, 73, 220);
-  background: none;
+    color: #0a215c;
+    background: #ffffff;
+    border: 2px solid #0a215c;
 }
+
+
+
 /* footer section styling */
 footer{
     padding-bottom:0px;
@@ -702,7 +710,7 @@ footer{
 }
  .social-links a {
     margin: 0 10px;
-    color: rgb(20, 73, 220);
+    color: #ffe459;
     font-weight: bold;
     text-decoration: none;
   }
@@ -801,14 +809,90 @@ footer span a:hover{
     .max-width{
         padding: 0 23px;
     }
-    .home .home-content .text-2{
-        font-size: 60px;
+    .home {
+        height: auto; /* Permite que la altura se ajuste al contenido */
+        min-height: auto; /* Elimina el mínimo de 500px en pantallas pequeñas */
+        background-attachment: scroll; /* Desactiva el fondo fijo en dispositivos móviles */
     }
-    .home .home-content .text-3{
-        font-size: 32px;
+
+    .home .max-width {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        align-items: center; /* Centra los elementos horizontalmente */
     }
-    .home .home-content a{
-        font-size: 20px;
+
+    .home .home-content {
+        flex-direction: column; /* Cambia las columnas a una disposición vertical */
+        align-items: center; /* Centra el contenido */
+    }
+
+    .home .home-content .left, 
+    .home .home-content .right {
+        width: 100%; /* Las columnas ocupan todo el ancho */
+        text-align: center; /* Centra el texto */
+        margin-bottom: 20px; /* Añade un margen inferior para separar las columnas */
+    }
+
+    .home .home-content .left .text {
+        font-size: 40px; /* Reduce el tamaño del texto en pantallas más pequeñas */
+        line-height: 1.2; /* Ajusta el interlineado para mejorar la legibilidad */
+    }
+
+    .home .home-content a {
+        font-size: 20px; /* Reduce el tamaño de fuente del botón */
+        padding: 10px 30px; /* Ajusta el relleno del botón */
+    }
+
+    .home .home-content .right img {
+        height: 250px; /* Reduce la altura de la imagen */
+        width: 250px; /* Reduce el ancho de la imagen */
+    }
+
+    .container {
+        height: auto; /* Permite que la altura se ajuste al contenido */
+        margin-top: 20px; /* Reduce el margen superior */
+        background-attachment: scroll; /* Desactiva el fondo fijo en dispositivos móviles */
+    }
+
+    .section-top {
+        flex: 0 0 auto; /* Ajusta la flexibilidad para adaptarse al contenido */
+        margin: 20px 0; /* Añade espacio arriba y abajo */
+        padding: 20px; /* Añade un relleno para separar el contenido de los bordes */
+        background-color: rgba(0, 0, 0, 0.5); /* Añade transparencia para resaltar el texto */
+    }
+
+    .section-top h1 {
+        font-size: 5rem; /* Reduce el tamaño de la fuente */
+    }
+
+    .section-bottom {
+        flex: 0 0 auto; /* Ajusta la flexibilidad para adaptarse al contenido */
+        padding: 20px; /* Añade un relleno para separar el contenido de los bordes */
+        background-color: rgba(0, 0, 0, 0.7); /* Añade transparencia para resaltar el texto */
+    }
+
+    .section-bottom h2 {
+        font-size: 2rem; /* Reduce el tamaño de la fuente */
+    }
+
+    .section-bottom .description {
+        font-size: 1rem; /* Reduce el tamaño del texto */
+        width: 90%; /* Aumenta el ancho para mejorar la legibilidad */
+    }
+
+    .email-form {
+        width: 100%; /* Ajusta el ancho del formulario */
+    }
+
+    .email-form textarea {
+        height: 80px; /* Reduce la altura del textarea */
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+    }
+
+    .textarea-container button {
+        bottom: 15px; /* Ajusta la posición en dispositivos más pequeños */
+        right: 5px; /* Ajusta el margen derecho */
+        padding: 5px 10px; /* Reduce el relleno del botón */
+        font-size: 0.8rem; /* Ajusta el tamaño de fuente del botón */
     }
     .services .serv-content .card{
         width: 100%;
@@ -816,16 +900,48 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
-    .home .home-content .text-2{
-        font-size: 50px;
+    .home .home-content .left .text{
+        font-size: 40px;
     }
-    .home .home-content .text-3{
-        font-size: 27px;
+
+    .home .home-content a {
+        font-size: 18px; /* Reduce el tamaño del botón para pantallas más pequeñas */
+        padding: 8px 24px; /* Ajusta el relleno del botón */
     }
+
+    .home .home-content .right img {
+        height: 200px; /* Ajusta la altura de la imagen */
+        width: 200px; /* Ajusta el ancho de la imagen */
+    }
+   
     .about .about-content .right .text,
     .skills .skills-content .left .text{
         font-size: 19px;
     }
+
+    .section-top h1 {
+        font-size: 3.5rem; /* Ajusta aún más el tamaño del texto en pantallas muy pequeñas */
+    }
+
+    .section-bottom h2 {
+        font-size: 1.5rem; /* Ajusta el tamaño de la fuente del título */
+    }
+
+    .section-bottom .description {
+        font-size: 0.9rem; /* Reduce aún más el tamaño del texto */
+    }
+
+    .email-form textarea {
+        height: 70px; /* Reduce aún más la altura del textarea */
+    }
+
+    .textarea-container button {
+        bottom: 10px; /* Ajusta la posición del botón */
+        right: 5px; /* Ajusta el margen derecho */
+        padding: 5px; /* Reduce el relleno del botón */
+        font-size: 0.7rem; /* Ajusta el tamaño de fuente del botón */
+    }
+
     .contact .right form .fields{
         flex-direction: column;
     }
@@ -851,6 +967,8 @@ body{
     background: url("images/background.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+    margin: 0;
+    padding: 0;
     color:#fff;
 }
 
