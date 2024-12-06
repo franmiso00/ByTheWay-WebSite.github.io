@@ -65,3 +65,30 @@ $(document).ready(function(){
     });
     
 });
+
+// Email Js keys IDs
+const serviceID = 'service_2wp0grj';
+const templateID_1 = 'template_kj74ya6';
+const templateID_2 = 'template_uogfdtr';
+
+// Suggestion email JS function
+function sendSuggest(){
+    let params = {
+        suggestion : document.getElementById("suggestions").value
+    }
+
+    emailjs.send(serviceID, templateID_1, params)
+        .then(alert("¡Gracias por tu sugerencia!"))
+ }
+
+// Form email JS function 
+function sendMail(){
+    let params = {
+        name : document.getElementById("name").value,
+        email : document.getElementById("email").value,
+        message : document.getElementById("message").value
+    }
+
+    emailjs.send(serviceID, templateID_2, params)
+        .then(alert("¡Gracias por contactar!"))
+ }
