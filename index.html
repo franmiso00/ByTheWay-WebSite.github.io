@@ -155,7 +155,7 @@
                 <form class="email-form" action="mailto:tuemail@ejemplo.com" method="POST" enctype="text/plain">
                     <div class="textarea-container">
                         <textarea name="suggestions" id="suggestions" placeholder="Escribe tus sugerencias aquí..." required></textarea>
-                        <button type="submit" id="reward_btt" onclick="sendSuggest">
+                        <button type="submit" onclick="sendSuggest()">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </div>
@@ -199,7 +199,7 @@
                             <textarea cols="30" rows="10" id="message" placeholder="Mensaje.." required></textarea>
                         </div>
                         <div class="button-area">
-                            <button type="submit" id="form_btt" onclick="sendMail">Enviar mensaje</button>
+                            <button type="submit" onclick="sendMail()">Enviar mensaje</button>
                         </div>
                     </form>
                 </div>
