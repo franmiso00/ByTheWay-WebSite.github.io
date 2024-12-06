@@ -804,8 +804,16 @@ footer span a:hover{
         font-size: 35px;
     }
     .home .home-content a{
-        font-size: 23px;
-        padding: 10px 30px;
+        display: inline-block;
+        background: #ffe459;
+        color: #0a215c;
+        font-weight: bold;
+        font-size: 25px;
+        padding: 12px 36px;
+        margin-top: 30px;
+        border-radius: 6px;
+        border: 2px solid #ffe459;
+        transition: all 0.3s ease;
     }
     .max-width{
         max-width: 930px;
@@ -868,6 +876,7 @@ footer span a:hover{
     .home .home-content a {
         font-size: 20px; /* Reduce el tamaño de fuente del botón */
         padding: 10px 30px; /* Ajusta el relleno del botón */
+        
     }
 
     .home .home-content .right img {
