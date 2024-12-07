@@ -92,3 +92,23 @@ function sendMail(){
     emailjs.send(serviceID, templateID_2, params)
         .then(alert("¡Gracias por contactar!"))
  }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".services .serv-content .card");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                cards.forEach(card => card.classList.remove("active"));
+                entry.target.classList.add("active");
+            } else {
+
+                entry.target.classList.remove("active");
+            }
+        });
+    }, { threshold: 0.6 });
+
+    cards.forEach(card => observer.observe(card));
+});
+

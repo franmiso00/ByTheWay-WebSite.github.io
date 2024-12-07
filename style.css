@@ -494,12 +494,13 @@ section .title::after{
   }
   
   .section-top h1 {
-    font-size: 10rem;
+    font-size: 12rem;
     text-align: center;
-    font-weight: bold;
+    font-weight: 200;
     color: rgb(255, 255, 255);
     letter-spacing: 3px;
     text-transform: uppercase;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
   }
   
   .section-bottom {
@@ -841,6 +842,42 @@ footer span a:hover{
 }
 
 @media (max-width: 690px) {
+    .services .serv-content .card {
+        background: transparent;
+        color: #ffe459;
+        transform: scale(1);
+        margin-bottom: 20px;
+        transition: all 1s ease-in-out;
+    }
+
+    .services .serv-content .card .text {
+        color: #ffe459;
+        transition: color 1s ease-in-out;
+    }
+
+    .services .serv-content .card i {
+        color: #ffe459;
+        transition: color 1s ease-in-out;
+    }
+
+    .services .serv-content .card.active {
+        background: #ffffff;
+        color: #0a215c;
+        transform: scale(1.05);
+    }
+
+    .services .serv-content .card.active .text {
+        color: #0a215c;
+    }
+
+    .services .serv-content .card.active i {
+        color: #0a215c;
+    }
+}
+
+
+
+@media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
     }
@@ -875,7 +912,7 @@ footer span a:hover{
 
     .home .home-content a {
         font-size: 20px; /* Reduce el tamaño de fuente del botón */
-        padding: 10px 30px; /* Ajusta el relleno del botón */
+        padding: 20px 40px; /* Ajusta el relleno del botón */
         
     }
 
@@ -898,7 +935,7 @@ footer span a:hover{
     }
 
     .section-top h1 {
-        font-size: 5rem; /* Reduce el tamaño de la fuente */
+        font-size: 8rem; /* Reduce el tamaño de la fuente */
     }
 
     .section-bottom {
@@ -974,7 +1011,7 @@ footer span a:hover{
     }
 
     .section-top h1 {
-        font-size:  4rem; /* Ajusta aún más el tamaño del texto en pantallas muy pequeñas */
+        font-size:  6rem; /* Ajusta aún más el tamaño del texto en pantallas muy pequeñas */
     }
 
     .section-bottom h2 {
