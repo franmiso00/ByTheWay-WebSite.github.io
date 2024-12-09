@@ -205,24 +205,38 @@ section .title::after{
     color: #ffe600;
 }
 
+home .home-content .social-icons {
+    margin-top: 30px; /* Similar al espaciado del botón anterior */
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre los íconos */
+}
 
-.home .home-content a{
-    display: inline-block;
+.home .home-content .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background: #ffe459;
     color: #0a215c;
-    font-weight: bold;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 30px;
-    border-radius: 6px;
+    font-size: 30px; /* Tamaño de los íconos */
+    width: 60px; /* Tamaño del botón (ancho y alto) */
+    height: 60px; /* Tamaño del botón (ancho y alto) */
+    border-radius: 50%; /* Forma circular */
     border: 2px solid #ffe459;
     transition: all 0.3s ease;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
-.home .home-content a:hover{
-    color: #0a215c;
-    background: #ffffff;
-    border: 2px solid #0a215c;
+
+.home .home-content .social-icons a:hover {
+    background: #ffffff; /* Cambio de color de fondo */
+    color: #0a215c; /* Cambio de color del ícono */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    border-color: #0a215c; /* Cambio de color del borde */
 }
+
 
 .home .home-content .right img{
     height: 400px;
